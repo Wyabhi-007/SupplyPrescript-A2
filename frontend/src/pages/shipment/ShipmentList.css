@@ -1,0 +1,94 @@
+/* ============================================================
+   Shipment List — Minimalist
+   ============================================================ */
+
+.list-container {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.list-toolbar {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-box {
+  position: relative;
+  width: 280px;
+}
+
+.search-box .search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.search-box .search-input {
+  width: 100%;
+  padding: 7px 12px 7px 32px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  font-size: 0.8rem;
+  background: var(--input-bg);
+  color: var(--text-primary);
+  outline: none;
+  font-family: inherit;
+}
+
+.search-box .search-input:focus {
+  border-color: var(--accent);
+}
+
+.search-box .search-input::placeholder {
+  color: var(--text-muted);
+}
+
+.actions-cell {
+  display: flex;
+  gap: 4px;
+}
+
+.btn-icon-only {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  transition: background 0.15s ease;
+}
+
+.btn-icon-only:hover {
+  background-color: var(--hover-bg);
+}
+
+.text-blue { color: var(--accent); }
+.text-red { color: var(--danger); }
+
+.empty-row {
+  text-align: center;
+  padding: 32px !important;
+  color: var(--text-muted) !important;
+}
+
+.pagination {
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--border-color);
+}
+
+.pagination-info {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
